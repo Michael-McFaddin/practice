@@ -26,7 +26,7 @@
 // let i = 0;
 
 
-//  3. Start with an array of hashes and compute the sum of the prices (from the :price key).
+//  3. Start with an array of objects and compute the sum of the prices (from the :price key).
 //     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes 105.
 // let items = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}];
 // let sum = 0;
@@ -57,7 +57,7 @@
 // let i = 0;
 
 
-//  6. Start with an array of hashes and find the hash with the lowest price (from the :price key).
+//  6. Start with an array of objects and find the object with the lowest price (from the :price key).
 //     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "pencil", price: 1}.
 // let items = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}];
 // let lowest = items[0];
@@ -84,7 +84,7 @@
 // const str2 = words.reduce((acc, str, index) => index === words.length - 1 ? acc + "-" + str + "-" : acc + "-" + str , "");
 // console.log(str2);
 
-//  9. Start with an array of hashes and find the hash with the shortest name (from the :name key).
+//  9. Start with an array of objects and find the object with the shortest name (from the :name key).
 //     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "book", price: 4}.
 // let items = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}];
 // let shortest = items[0];

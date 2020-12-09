@@ -122,7 +122,7 @@
 // let i = 0;
 
 
-//  3. Start with an array of hashes and create a new array of string values from each hash's :name key.
+//  3. Start with an array of objects and create a new array of string values from each object's :name key.
 //     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
 // let nameArr = [{name: 'Alice', age: 27}, {name: 'Blane', age: 16}];
 // let justNameArr = [];
@@ -143,7 +143,7 @@
 // let i = 0;
 
 
-//  6. Start with an array of hashes and create a new array of number values from each hash's :age key.
+//  6. Start with an array of objects and create a new array of number values from each object's :age key.
 //     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16].
 // let nameAgeArr = [{name: 'Alice', age: 27}, {name: 'Blane', age: 16}];
 // let ageOnlyArr = [];
@@ -164,7 +164,7 @@
 // let i = 0;
 
 
-// 9.  Start with an array of hashes and create a new array of number values from each hash's :age key times 2.
+// 9.  Start with an array of objects and create a new array of number values from each object's :age key times 2.
 //     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32].
 // let people = [{name: "Alice", age: 27}, {name: "Blane", age: 16}];
 // let ageTimes2 = [];

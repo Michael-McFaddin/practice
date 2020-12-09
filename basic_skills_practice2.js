@@ -28,7 +28,7 @@
 // let i = 0;
 
 
-//  3. Start with an array of hashes and create a new array with only the hashes with prices greater than 5 (from the :price key).
+//  3. Start with an array of objects and create a new array with only the objects with prices greater than 5 (from the :price key).
 //     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}].
 // let items = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}];
 // let itemsUnder5 = [];
@@ -49,7 +49,7 @@
 // let i = 0;
 
 
-//  6. Start with an array of hashes and create a new array with only the hashes with names shorter than 6 letters (from the :name key).
+//  6. Start with an array of objects and create a new array with only the objects with names shorter than 6 letters (from the :name key).
 //     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}, {name: "book", price: 4}].
 // let names = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}];
 // let lessThan6 = [];
@@ -70,7 +70,7 @@
 // let i = 0;
 
 
-//  9. Start with an array of hashes and create a new array with only the hashes with prices less than 10 (from the :price key).
+//  9. Start with an array of objects and create a new array with only the objects with prices less than 10 (from the :price key).
 //     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "pencil", price: 1}, {name: "book", price: 4}].
 // let items = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}];
 // let lessThan10 = [];
