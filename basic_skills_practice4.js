@@ -117,7 +117,7 @@
 //  8. Combine data from a object with names and prices and an array of objects with names, colors, and weights to make a new object.
 //     For example, {"chair" => 75, "book" => 15} and [{name: "chair", color: "red", weight: 10}, {name: "book", color: "black", weight: 1}] 
 //     becomes {"chair" => {price: 75, color: "red", weight: 10}, "book" => {price: 15, color: "black", weight: 1}}.
-
+//____________________________
 //  9. Convert an array of objects into a object of arrays, using the author as keys and the titles as values.
 //     For example, [{author: "Jeff Smith", title: "Bone"}, {author: "George Orwell", title: "1984"}, {author: "Jeff Smith", title: "RASL"}] 
 //     becomes {"Jeff Smith" => ["Bone", "RASL"], "George Orwell" => ["1984"]}.
@@ -147,10 +147,30 @@ objs.forEach(book => {
   console.log(authorsObj);
 });
 // console.log(authorsObj);
-
+//________________________________
 
 // 10. Given a object, create a new object that has the keys and values switched.
 //     For example, {"a" => 1, "b" => 2, "c" => 3} becomes {1 => "a", 2 => "b", 3 => "c"}.
+// let originalObj = {"a": 1, "b": 2, "c": 3};
+// let newObj = {};
+// let newObj2 = {};
+// let newObj3 = {};
 
+// for (let key in originalObj) {
+//   newObj[originalObj[key]] = key;
+// }
+// console.log(newObj);
+
+// Object.keys(originalObj).forEach(key => {
+//   newObj2[originalObj[key]] = key;
+// });
+// console.log(newObj2);
+
+// Object.entries(originalObj).forEach(entry => {
+//   let key = entry[0];
+//   let value = entry[1];
+//   newObj3[value] = key;
+// });
+// console.log(newObj3);
 
 // SOLUTIONS: https://gist.github.com/peterxjang/216a7a6e8411ee5c05118e78022f2bc7
