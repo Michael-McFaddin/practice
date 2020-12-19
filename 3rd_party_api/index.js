@@ -1,5 +1,5 @@
 // https://github.com/public-apis/public-apis#art--design
-// https://collection.cooperhewitt.org/api
+// https://collection.cooperhewitt.org/api/
 const express = require('express');
 const app = express();
 require('dotenv').config();

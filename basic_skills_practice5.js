@@ -304,31 +304,30 @@ let maxNum = numArr[0];
 // v
 //[2, 3, 5, 8]
 //[]
-let input1 = [1, 4, 7, 9];
-let input2 = [2, 3, 5, 8];
-function merge(arr1, arr2) {
-  let i = 0; // 0
-  let j = 0; // 0
-  let result = []; // []
-  while ( i < arr1.length && j < arr2.length) {
-    if (arr1[i] < arr2[j]) {
-      result.push(arr1[i]);
-      i++;
-    } else {
-      result.push(arr2[j]);
-      j++;
-    }
+// let input1 = [1, 4, 7, 9];
+// let input2 = [2, 3, 5, 8];
+// function merge(arr1, arr2) {
+//   let i = 0; // 0
+//   let j = 0; // 0
+//   let result = []; // []
+//   while ( i < arr1.length && j < arr2.length) {
+//     if (arr1[i] < arr2[j]) {
+//       result.push(arr1[i]);
+//       i++;
+//     } else {
+//       result.push(arr2[j]);
+//       j++;
+//     }
 
-    if (i >= arr1.length) {
-      result.push(arr2.slice(j));   
-    } else if (j >= arr2.length) {
-      result.push(arr1.slice(i));
-    }
-  }
-  return result.flat();
-}
-console.log(merge(input1, input2));
-
+//     if (i >= arr1.length) {
+//       result.push(arr2.slice(j));   
+//     } else if (j >= arr2.length) {
+//       result.push(arr1.slice(i));
+//     }
+//   }
+//   return result.flat();
+// }
+// console.log(merge(input1, input2));
 
 
 
