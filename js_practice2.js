@@ -1,17 +1,13 @@
 // reduce tutorial https://www.javascripttutorial.net/javascript-array-reduce/
+// Use a while, for, forEach and reduce for each problem.
 
 //  1. Start with an array of numbers and compute the sum of all the numbers.
 //     For example, [5, 10, 8, 3] becomes 26.
 // let nums = [5, 10, 8, 3];
 // let total = 0;
-// let i = 0;
-// while (i < nums.length) {
-//   total += nums[i];
-//   i++;
-// }
-// console.log(total);
-
 // let newTotal = 0;
+// let i = 0;
+
 // nums.forEach(num => newTotal += num);
 // console.log(newTotal);
 

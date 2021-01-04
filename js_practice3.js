@@ -13,17 +13,7 @@
 // let arr = [2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2];
 // let newArr = [];
 // let i = 0;
-// while (i < arr.length) {
-//   let newI = arr[i];
-//   if (i === 0) {
-//     newArr.push(arr[i]);
-//     i += arr[i];
-//     // console.log(`first condition ${i}`);
-//   } else {
-//     newArr.push(arr[i]);
-//     i += arr[i];
-//   }
-// }
+//
 // console.log(newArr);
 
 //2. Create a new array that is the reverse of this array [2, 1, 8, 4, 9, 5, 3]
@@ -31,18 +21,7 @@
 // let word = 'supercalifragalisticexpialidoshious';
 // let reversedArr = [];
 // let reversedWord = '';
-// let i = arr.length - 1;
-// let j = word.length - 1;
 
-// while (i >= 0) {
-//   reversedArr.push(arr[i]);
-//   i -= 1;
-// }
-
-// while (j >= 0) {
-//   reversedWord += word[j];
-//   j -= 1;
-// }
 // console.log(reversedArr);
 // console.log(reversedWord);
 
@@ -119,3 +98,29 @@
 //   return result.flat();
 // }
 // console.log(merge(input1, input2));
+
+
+// while (i < arr.length) {
+//   let newI = arr[i];
+//   if (i === 0) {
+//     newArr.push(arr[i]);
+//     i += arr[i];
+//     // console.log(`first condition ${i}`);
+//   } else {
+//     newArr.push(arr[i]);
+//     i += arr[i];
+//   }
+// }
+// --------------------------------------
+// let i = arr.length - 1;
+// let j = word.length - 1;
+
+// while (i >= 0) {
+//   reversedArr.push(arr[i]);
+//   i -= 1;
+// }
+
+// while (j >= 0) {
+//   reversedWord += word[j];
+//   j -= 1;
+// }

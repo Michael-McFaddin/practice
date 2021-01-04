@@ -71,31 +71,80 @@
 
 // Input: arrayToList([10, 20])
 // Expected output: {value: 10, rest: {value: 20, rest: null}}
-// function arrayToList(arr) {
-//   let list = null;
-//   for (let i = arr.length - 1; i >= 0; i--) {
-//     list = {value: arr[i], rest: list};	
-//   }
-//   return list;
-// }
-// console.log(arrayToList([10, 20]));
+function arrayToList(arr) {
+  let list = null;
+  for (let i = arr.length - 1; i >= 0; i--) {
+    list = {value: arr[i], rest: list};	
+  }
+  return list;
+}
+console.log(arrayToList([10, 20]));
 
 // Input: listToArray(arrayToList([10, 20, 30]))
 // Expected output: [10, 20, 30]
-// console.log(listToArray(arrayToList([10, 20, 30])));
+function listToArray(list) {
+  let arr = [];
+  for (let i = list; i; i = i.rest) { //https://stackoverflow.com/questions/28672642/how-does-this-for-loop-condition-work
+    arr.push(i.value);
+  }
+  return arr;
+}
+console.log(listToArray(arrayToList([10, 20, 30])));
 
 // Input: prepend(10, prepend(20, null))
 // Expected output: {value: 10, rest: {value: 20, rest: null}}
-// console.log(prepend(10, prepend(20, null)));
+function prepend(ele, list) {
+  let obj = listToArray(list);
+  obj.unshift(ele);
+  console.log(`after unshift ${obj}`);
+  obj = arrayToList(obj);
+  return obj;
+}
+console.log(prepend(10, prepend(20, null)));
 
 
 // console.log(nth(arrayToList([10, 20, 30]), 1));
 // → 20
 
-let list = {value: 10, rest: {value: 20, rest: null}};
-let arr = [];
-for (let prop in list) {
-  const value = list[prop];
-  arr.push(list[prop]);
+// let currentList = {value: 10, rest: {value: 20, rest: {value: 30, rest: null}}};
+// let newArr = [];
+
+// function listToArray(list) {
+//   let arr = [];
+//   for (let i = list; i; i = i.rest) {
+//     arr.push(i.value);
+//   }
+//   return arr;
+// }
+// console.log(listToArray(currentList));
+
+//https://gist.github.com/laichejl/32d98af04caa66bd195f
+
+//  ______________________________________________________________________________________________________
+//Deep Comparison
+
+// The == operator compares objects by identity. But sometimes you’d prefer to compare the values of their 
+// actual properties. Write a function deepEqual that takes two values and returns true only if they are the 
+// same value or are objects with the same properties, where the values of the properties are equal when compared 
+// with a recursive call to deepEqual.
+
+// To find out whether values should be compared directly (use the === operator for that) or have their properties 
+// compared, you can use the typeof operator. If it produces "object" for both values, you should do a deep comparison. 
+// But you have to take one silly exception into account: because of a historical accident, typeof null also produces "object".
+
+// The Object.keys function will be useful when you need to go over the properties of objects to compare them.
+
+function deepEqual(a, b) {
+  if (a === b) return true;
+  if (a == null || typeof a != 'object' || b == null || typeof b != 'object') return false;
 }
-console.log(arr);
+
+let obj = {here: {is: 'an'}, object: 2};
+console.log(deepEqual(obj, obj));
+// Expected output: true
+
+// console.log(deepEqual(obj, {here: 1, object: 2}));
+// Expected output: false
+
+// console.log(deepEqual(obj, {here: {is: 'an'}, object: 2}));
+// Expected output: true
