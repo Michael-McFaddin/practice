@@ -4,7 +4,8 @@
 //     For example, [1, 2, 3] becomes [3, 6, 9].
 // let arr = [1, 2, 3];
 // let newArr = [];
-// let i = 0;
+
+// console.log(newArr);
 
 //  2. Start with an array of strings and create a new array with each string upcased.
 //     For example, ["hello", "goodbye"] becomes ["HELLO", "GOODBYE"].
@@ -12,24 +13,31 @@
 // let newStrArr = [];
 // let i = 0;
 
+// console.log(newStrArr);
+
 //  3. Start with an array of objects and create a new array of string values from each object's :name key.
 //     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
 // let nameArr = [{name: 'Alice', age: 27}, {name: 'Blane', age: 16}];
 // let justNameArr = [];
 // let i = 0;
 
-//  4. Start with an array of strings and create a new array with each string's first letter only and the length of the string.
+// console.log(justNameArr);
+
+//  4. Start with an array of strings and create a new array with each string's first letter and the length of the string.
 //     For example, ["hello", "goodbye"] becomes ["h", 5, "g", 7].
 // let arr = ["hello", "goodbye"];
-// let firstLrtLen = [];
+// let firstLtrLen = [];
 // let i = 0;
+
+// console.log(firstLtrLen);
 
 // 5.  Start with an array of objects and create a new array of number values from each object's :age key times 2.
 //     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32].
 // let people = [{name: "Alice", age: 27}, {name: "Blane", age: 16}];
 // let ageTimes2 = [];
-// let i = 0;
 
+// console.log(ageTimes2);
+//___________________________________________
 // Use a while, for, forEach and filter for each question below.
 
 //  6. Start with an array of numbers and create a new array with only the numbers less than 20.
